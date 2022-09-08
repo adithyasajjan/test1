@@ -1,4 +1,4 @@
-# Assessment 12/08/2022
+# Assessment 
 Assessment 3 08/09/2022
 
 Q1. Using JDBC, execute a SQL query to fetch “FIRST_NAME, LAST_NAME” from the Worker table using the alias name as “FULL_NAME” results in ``UPPER CASE.
