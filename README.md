@@ -21,3 +21,10 @@ Exp4. Student Example for controlling the data with access modifiers with using 
 Exp5.Simple example on Singleton class implementation with double checking the object using factory
 method.
 
+Assessment 3 08/09/2022
+
+Q1. Using JDBC, execute a SQL query to fetch “FIRST_NAME, LAST_NAME” from the Worker table using the alias name as “FULL_NAME” results in ``UPPER CASE.
+
+Q2.  Using JDBC, Execute a SQL query to fetch unique values of DEPARTMENT from Worker-Table.
+
+Q3. Using JDBC, Execute a SQL query to find the position of the alphabet (‘a’) in the first name column ‘Amitabh’ from the Worker-Table.
