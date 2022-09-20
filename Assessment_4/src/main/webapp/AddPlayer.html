@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Player</title>
+</head>
+<style>
+	body{
+		background-image : 
+		url('Cricket4.jpeg');
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+	}
+</style>
+<body>
+<form action="AddPlayer" method="get">
+	<center>
+		
+		<h1 style="color:white;">Add New Player Info</h1>
+		<br>
+		<br>
+		<span style="color:white;">Player Name</span> : <input type="text" name="PName" id="PName">
+		<br>
+		<br>
+		<span style="color:white;">Matches played</span> : <input type="number" name="matchesPlayed" id="matchesPlayed" min=0>
+		<br>
+		<br>
+		<span style="color:white;">Total runs scored</span> : <input type="text" name="score" id="score" min=0>
+		<br>
+		<br>
+		<span style="color:white;">Wickets taken</span> : <input type="number" name="wickets" id="wickets" min=0>
+		<br>
+		<br>
+		<span style="color:white;">Out on zero</span> : <input type="number" name="out" id="out" min=0 required>
+		<br>
+		<br>
+		<span style="color:white;">Player Type</span> : <select name = "PType">
+				<option value="">select player type</option>
+				<option value="Batsman">Batsman</option>
+				<option value="Bowler">Bowler</option>
+				<option value="All-Rounder">All-Rounder</option>
+				<option value="Wicket-Keeper">Wicket-Keeper</option>
+		</select>
+		<br>
+		<br>
+										<input type = "submit" value = "ADD">
+	</center>
+</form>	
+</body>
+</html>

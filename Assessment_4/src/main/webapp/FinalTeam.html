@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FianlTeam</title>
+</head>
+<style>
+	body{
+		background-image : 
+		url('Cricket4.jpeg');
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+	}
+</style>
+<body>
+	<form action="FinalTeam" method="get">
+
+	<center> 
+		<h1 style="color:white;">Final Team Requirements</h1>
+		<span style="color:white;">Batsman needed</span><span class="error">*</span> : <input type = "number" name = "Bat" min=3 required>
+		<br>
+		<br>
+		<span style="color:white;">Bowlers needed</span><span class="error">*</span> : <input type = "number" name = "Bow" min=3 required>
+		<br>
+		<br>
+		<span style="color:white;">Wicket-Keeper needed</span><span class="error">*</span> : <input type = "number" name = "WKeeper" max=1 required>
+		<br>
+		<br>
+		<span style="color:white;">All-Rounders needed</span><span class="error">*</span> : <input type = "number" name = "AllRou" min=2 required>
+		<br>
+		<br>
+								<input type = "submit" value = "SUBMIT">
+	</center>
+	
+</form>
+</body>
+</html>
