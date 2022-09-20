@@ -1,4 +1,12 @@
 # Assessment 
+Assessment 4 20/09/2022
+
+Cricket Team Selection with Html and Servlets
+
+Problem Statement :
+
+South Africa is coming to India for Playing a bilateral series. Board of Control for Cricket in India must announce a 11 Member team for this tour. During the selection, they can check their records like (Number of matches player played, highest score, Average, Number of times out for ZERO, wickets taken etc.). The team should have at least 3 bowlers and 1 wicket keeper.
+
 Assessment 3 08/09/2022
 
 Q1. Using JDBC, execute a SQL query to fetch “FIRST_NAME, LAST_NAME” from the Worker table using the alias name as “FULL_NAME” results in ``UPPER CASE.
