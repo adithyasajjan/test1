@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Online Account</title>
+</head>
+<style>
+	body{
+		background-image : 
+		url('OnlineBanking.jpg');
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+	}
+</style>
+<body>
+	<center>
+
+		<h1>Sign Up</h1>
+		Enter Full Name<span class="error">*</span> : <input type="text" name="fname" required>
+		<br>
+		<br>
+		Enter UserName<span class="error">*</span> : <input type="text" name="uname" required>
+		<br>
+		<br>
+		Enter Password<span class="error">*</span> : <input type="password" name="passwd">	
+		<br>
+		<br>
+		Select City<span class="error">*</span> : <select name = "city">
+			<option value="">select city</option>
+			<option value="Bengaluru">Bengaluru</option>
+			<option value="Hyderabad">Hyderabad</option>
+			<option value="Telangana">Telangana</option>
+		</select><br><br>
+		
+		Select Languages<span class="error">*</span> :
+		<input value="Kannada" type="checkbox" name="l1">Kannada &nbsp;&nbsp;
+		<input value="Hindi" type="checkbox" name="l1">Hindi &nbsp;&nbsp;
+		<input value="English" type="checkbox" name="l1">English &nbsp;&nbsp;
+		<br><br>
+		
+		Select Gender<span class="error">*</span> :
+		<input value="male" type="radio" name="g1">male &nbsp;&nbsp;
+		<input value="female" type="radio" name="g1">female &nbsp;&nbsp;
+		<input value="other" type="radio" name="g1">other &nbsp;&nbsp;
+		<br><br>
+		
+		Address<span class="error">*</span> : <br> <textarea rows="5" cols="20"></textarea><br><br>
+		Enter Mobile : <input type="tel" name="mobile"><br><br>
+		Enter Email : <input type="email" name="email"><br><br>
+		
+				<input type="submit" value="signup">
+				<a href="login.html">Already registered? Login</a>
+	</font>
+	</center>
+
+	
+</body>
+</html> 

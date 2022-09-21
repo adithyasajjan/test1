@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<title>TRANSFER</title>
+</head>
+<style>
+	body{
+		background-image : 
+		url('OnlineBanking.jpg');
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+	}
+</style>
+<body>
+<form action="Transfer" method="post">
+	<center> 
+		<h1 style="color:white;">TRANSFER AMOUNT</h1>
+				
+				<span style="color:white;">Enter UserName</span><span class="error">*</span> : <input type = "text" name = "user" required>
+				<br>
+				<br>
+				<span style="color:white;">Enter Password</span><span class="error">*</span> : <input type = "password" name = "pwd" required>
+				<br>
+				<br>
+				<span style="color:white;">Enter Beneficiary's AccNo</span><span class="error">*</span> : <input type = "number" name = "accNo" required>
+				<br>
+				<br>
+				<span style="color:white;">Amount</span><span class="error">*</span> : <input type = "number" name = "amount" id="amount" step="0.1" min="1" max="1000000">
+				<br>
+				<br>
+				
+				<script>
+				var amount = document.getElementById("amount");
+				amount.addEventListener("input", () => {
+				  if(amount < 1000){
+						amount.setCustomValidity("Enter a valid amount");
+						amount.reportValidity();
+					}
+					else{ amount.setCustomValidity(""); }
+				});
+				
+				</script>
+				
+									<input type = "submit" value = "TRANSFER">
+							<!-- <a href="SignUp.html">New User? SignUp</a> -->
+	</center>	
+</form>
+</body>
+</html>

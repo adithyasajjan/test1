@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<title>LOGIN PAGE</title>
+</head>
+<style>
+	body{
+		background-image : 
+		url('OnlineBanking.jpg');
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+	}
+</style>
+<body>
+<form action="Login" method="get">
+	<center> 
+		<h1 style="color:white;">LOGIN</h1>
+				
+				<span style="color:white;">Enter UserName</span><span class="error">*</span> : <input type = "text" name = "user" required>
+				<br>
+				<br>
+				<span style="color:white;">Enter Password</span><span class="error">*</span> : <input type = "password" name = "pwd" id="passwd1" required>
+				<br>
+				<input type="checkbox" onclick="myFunction()">Show Password
+				<br>
+				<br>
+				
+				<script>
+				function myFunction() {
+					  var x = document.getElementById("passwd1");
+					  if (x.type === "password") {
+					    x.type = "text";
+					  } else {
+					    x.type = "password";
+					  }
+					}
+				</script>
+											<input type = "submit" value = "LOGIN">
+							<!-- <a href="SignUp.html">New User? SignUp</a> -->
+	</center>	
+</form>
+</body>
+</html>

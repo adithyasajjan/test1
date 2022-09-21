@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WITHDRAW</title>
+</head>
+
+<style>
+	body{
+		background-image : 
+		url('OnlineBanking.jpg');
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+	}
+</style>
+
+</head>
+<body>
+<form action="Withdraw" method="get">
+		<h1 align="left" style="color:white;">WITHDRAWAL</h1>
+		
+		<center>
+				<span style="color:white;">Enter UserName</span><span class="error">*</span> : <input type = "text" name = "user">
+				<br>
+				<br>
+				<span style="color:white;">Enter Password</span><span class="error">*</span> : <input type = "password" name = "pwd">
+				<br>
+				<br>
+				<span style="color:white;">Amount</span><span class="error">*</span> : <input type = "number" name = "amount" id="amount" step="any" min="1" max="1000000">
+				<br>
+				<br>
+				
+				<script>
+
+				
+				var amount = document.getElementById("amount");
+				amount.addEventListener("input", () => {
+		  			if(amount < 0){
+						amount.setCustomValidity("Enter a valid amount");
+						amount.reportValidity();
+					}
+					else{ amount.setCustomValidity(""); }
+				});
+				
+				
+				</script>
+												<input type = "submit" value = "WITHDRAW">
+		</center>
+		
+</form>	
+</body>
+</html>

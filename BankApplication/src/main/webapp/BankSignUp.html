@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--  <style>
+	html{
+		background-color : white ;
+	}
+	.error{
+	color : "white";
+	}
+</style> -->
+<title>SIGN UP</title>
+</head>
+<style>
+	body{
+		background-image : 
+		url('OnlineBanking.jpg');
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+	}
+</style>
+
+<body >  <!-- color code -->
+<form action="Register" method="get">
+	<center>
+
+		<h1 style="color:white;">Create New Account</h1>
+		<span style="color:white;">Enter First Name</span><span class="error">*</span> : <input type="text" name="fname" required>
+		<br>
+		<br>
+		<span style="color:white;">Enter Last Name</span><span class="error">*</span> : <input type="text" name="lname" required>
+		<br>
+		<br>
+		<span style="color:white;">Enter UserName</span><span class="error">*</span> : <input type="text" name="uname" id="uname" required>
+		<!--<p align="right" style="color:white;">Passwords must contain at least six characters, </p> 
+		<p align="right" style="color:white;">including uppercase, lowercase letters, numbers </p>
+		<p align="right" style="color:white;">and special characters [@, #, $, %, ^, &, +, =]</p> -->
+		<br>
+		<br>
+		<span style="color:white;">Enter Password</span><span class="error">*</span> : <input type="password" name="passwd1" id="passwd1"> 
+		<br>
+		<input type="checkbox" onclick="myFunction()">Show Password	
+		<br>
+		<br>
+		<span style="color:white;">Re-enter Password</span><span class="error">*</span> : <input type="password" name="passwd2" id="passwd2">
+		<br>
+		<input type="checkbox" onclick="myFunction1()">Show Password
+		<br>
+		<br>
+		<span style="color:white;">Opening Amount</span><span class="error">*</span> : <input type="number" name="amount" id="amount" step="0.1" min="1000" max="1000000">
+		<br>
+		<br>
+		<span style="color:white;">Enter Mobile</span><span class="error">*</span> : <input type="tel" name="mobile"><br><br>
+		<span style="color:white;">Enter Email</span> : <input type="email" name="email"><br><br>
+		
+		<script>
+
+		  function myFunction() {
+			  var x = document.getElementById("passwd1");
+			  if (x.type === "password") {
+			    x.type = "text";
+			  } else {
+			    x.type = "password";
+			  }
+			}
+		
+		function myFunction1() {
+			  var y = document.getElementById("passwd2");
+			  if (y.type === "password") {
+			    y.type = "text";
+			  } else {
+			    y.type = "password";
+			  }
+			}
+		</script>
+		
+						<input type="submit" value="Login Page">
+				<!--   <a href="login.html">Already registered? Login</a> -->
+	</font>
+	</center>
+</form>
+</body>
+</html>

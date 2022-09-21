@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DEPOSIT</title>
+
+<style>
+	body{
+		background-image : 
+		url('OnlineBanking.jpg');
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : 100% 100%;
+	}
+</style>
+
+</head>
+<body>
+<form action="Deposit" method="post" id="my_form">
+		<h1 align="center" style="color:white;">DEPOSIT</h1>
+		
+		<center>
+				<span style="color:white;">Enter UserName</span><span class="error">*</span> : <input type = "text" name = "user" id="user">
+				<br>
+				<br>
+				<span style="color:white;">Enter Password</span><span class="error">*</span> : <input type = "password" name = "pwd" id="passwd1" required>
+				<br>
+				<input type="checkbox" onclick="myFunction()">Show Password	
+				<br>
+				<span style="color:white;">Amount</span><span class="error">*</span> : <input type = "number" name = "amount" id="amount" step="any" min="1" max="1000000">
+				<br>
+				<br>
+														<input type="submit" value="DEPOSIT">
+				
+				<script>
+				
+				var amount = document.getElementById("amount");
+				amount.addEventListener("input", () => {
+		  			if(amount < 0){
+						amount.setCustomValidity("Enter a valid amount");
+						amount.reportValidity();
+					}
+					else{ amount.setCustomValidity(""); }
+				});
+
+				  function myFunction() {
+					  var x = document.getElementById("passwd1");
+					  if (x.type === "password") {
+					    x.type = "text";
+					  } else {
+					    x.type = "password";
+					  }
+					}
+				  
+				  const btn = document.getElementById('btn');
+
+				  btn.addEventListener('click', function handleClick(event) {
+					  
+				    event.preventDefault();
+
+				    const inputs = document.querySelectorAll('#user, #passwd1, #amount');
+
+				    inputs.forEach(input => {
+				      input.value = '';
+				    });
+				  });
+				
+				</script>
+				
+												 
+				
+												<!-- <input id="btn" type = "submit" value = "DEPOSIT"> -->  
+		</center>
+		
+</form>	
+</body>
+</html>
