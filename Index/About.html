@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+	<style>
+	
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins', sans-serif;
+			
+		 }
+		
+		.header{
+			min-height: 100vh;
+			width: 100%;
+			background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('banner.jpg');
+			background-position: center;
+			background-size: cover;
+			position: relative;
+		}
+		
+		nav{
+			display: flex;
+			padding: 2% 6%;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		nav img{
+			width: 150px;
+		}
+		
+		.nav-links{
+			flex: 1;
+			text-align: right;
+		}
+		
+		.nav-links ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+		}
+		
+		.nav-links ul li a{
+			color: white;
+			text-decoration: none;
+			font-size: 16	px;
+		}
+		
+		.nav-links ul li::after{
+			content: '';
+			width: 0%;
+			height: 2px;
+			background: #f44336;
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+		
+		.nav-links ul li:hover::after{
+			width: 100%;	
+		}
+			
+		.about-us {
+			
+			width: 100%;
+			text-align: center;
+			padding: 30px 0;
+			color: white;
+		}
+		
+		.about-us h2{
+			
+			font-size: 62px;
+			
+		}
+		
+		.about-us p{
+			
+			margin: 10px 0 40px;
+			font-size: 14px;
+			color: white;
+		}
+			/* font-size: 50px;
+			}
+			
+			.text-box p{
+			font-size: 16px;
+			} */
+			
+	</style>
+</head>
+<body>
+
+    <section class="header">
+		<nav>
+			<a href="index.html"><img src="" alt="bank logo"></a>
+				<div class="nav-links">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+					</ul>
+				</div>
+				
+		</nav>
+
+		<div class="about-us">
+			<h2>About Us</h2>
+			<p>Widely known for customer centricity, the Bank has gone through the various phases of its growth trajectory over hundred years of its existence. 
+			Growth of the Bank was phenomenal, especially after nationalization in the year 1969, attaining the status of a national level player in terms of 
+			geographical reach and clientele segments. <br>Eighties was characterized by business diversification for the Bank.<br><br> In June 2006, the Bank completed a 
+			century of operation in the Indian banking industry. The eventful journey of the Bank has been characterized by several memorable milestones. 
+			Today, Our Bank occupies a premier position in the comity of Indian banks. </p>
+			<!-- <div class="icons">
+				<i class="fa fa-heart-o"></i> 
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-linkedin"></i>
+			</div> -->
+			
+		</div>
+	</section>
+	
+</body>
+</html>

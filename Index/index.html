@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BankWebSite</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+	
+	 <style> 
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins', sans-serif;
+			
+		}
+		
+		.header{
+			min-height: 100vh;
+			width: 100%;
+			background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('banner.jpg');
+			background-position: center;
+			background-size: cover;
+			position: relative;
+		}
+		
+		nav{
+			display: flex;
+			padding: 2% 6%;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		nav img{
+			width: 150px;
+		}
+		
+		.nav-links{
+			flex: 1;
+			text-align: right;
+		}
+		
+		.nav-links ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+		}
+		
+		.nav-links ul li a{
+			color: white;
+			text-decoration: none;
+			font-size: 16	px;
+		}
+		
+		.nav-links ul li::after{
+			content: '';
+			width: 0%;
+			height: 2px;
+			background: #f44336;
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+		
+		.nav-links ul li:hover::after{
+			width: 100%;	
+		}
+		
+		.text-box{
+			width: 90%;
+			color: #fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		
+		.text-box h1{
+			font-size: 62px;
+		}
+		
+		.text-box p{
+			margin: 10px 0 40px;
+			font-size: 14px;
+			color: white;
+		}
+		
+		.hero-btn{
+			display: inline-block;
+			text-decoration: none;
+			color: white;
+			border: 1px solid white;
+			padding: 12px 34px;
+			font-size: 13px;
+			background: transparent;
+			position: relative;
+			cursor: pointer;
+		}
+		
+		.hero-btn:hover{
+			border: 1px solid #f44336;
+			background: #f44336;
+			transition: 1s;
+		}
+		
+		/*-------- Services --------*/
+		
+		.services{
+			width: 80%;
+			margin: auto;
+			text-align: center;
+			padding-top: 100px;
+		}
+		
+		.services h1{
+			font-size: 36px;
+			font-weight: 600;
+		}
+		
+		.services p{
+		
+			color: #777;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 22px;
+			padding: 10px;
+		}
+		
+		.row {
+			margin-top: 5%;
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		.services-col {
+			flex-basis: 31%;
+			background: #fff3f3;
+			border-radius: 10px;
+			margin-bottom: 5%;
+			padding: 20px 12px;
+			box-sizing: border-box;
+		}
+		
+		h3{
+			text-align: center;
+			font-weight: 600;
+			margin: 10px 0;
+		}
+		
+	</style> 
+</head>
+
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="" alt="bank logo"></a>
+				<div class="nav-links">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="About.html">ABOUT</a></li>
+						<li><a href="SignIn.jsp">SIGN IN</a></li>
+						<li><a href="SignUp.html">SIGN UP</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</div>
+				
+		</nav>
+		<div class="text-box">
+			<h1>India's Most Trusted Bank</h1>
+			<p>A good bank is not only the financial heart of the community, 
+			but also one with an obligation of helping <br> in every possible 
+			manner to improve the economic conditions of the common people
+			</p>
+			<a href="" class="hero-btn">Visit Us To Know More</a>
+		</div>
+		
+	</section>
+	
+	<!-- Services -->
+	<section class="services">
+		<h1>Online Services We Offer</h1>
+		<p>Transfer amount, online deposit, check balance, bank statement, education loan.</p>
+		
+		<div class="row">
+			<div class="services-col">
+				<h3>Online deposit</h3>
+				<p>Online Bank deposit service saves you a lot of time as you don’t
+				 have to write a deposit form and submit to the bank. 
+				 </p>
+			</div>
+			
+			<div class="services-col">
+				<h3>Transfer amount</h3>
+				<p>Online Bank transfer money service saves you a lot of time as you don’t 
+				have to write a cheque and money can be transferred online. 
+				</p>
+			</div>
+			
+			<div class="services-col">
+				<h3>Check balance</h3>
+				<p>Online Bank check balance service helps you to view the updated balance as it saves you 
+				lot of time from going to a nearest ATM and check for balance.
+				 </p>
+			</div>
+			
+			<div class="services-col">
+				<h3>Electricity bill payment</h3>
+				<p>Our bank offers a convenient platform for hassle-free electricity bill payment. Pay electricity 
+				bill online in minutes.This saves the time of going to BESCOM and utilise this time somewhere 
+				 effectively.
+				</p>
+			</div>		
+		</div>
+	</section>
+		
+</body>
+</html>
